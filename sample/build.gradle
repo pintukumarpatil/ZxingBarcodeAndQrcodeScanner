@@ -1,0 +1,19 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.androidTargetSdk
+    buildToolsVersion project.androidBuildTools
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion project.androidTargetSdk
+        versionCode 1
+        versionName "1.0.0"
+    }
+}
+
+dependencies {
+    // If you use this from an external project, use the following instead:
+    compile 'com.journeyapps:zxing-android-embedded:3.3.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+}
